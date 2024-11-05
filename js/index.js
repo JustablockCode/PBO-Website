@@ -31,4 +31,6 @@ async function fetchPlayerCount() {
     }
 }
 
+console.log("Hi, Im Justablock... Also why are you looking here in console?")
+
 fetchPlayerCount();
