@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Blank Online</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><a href="/" style="color: inherit; text-decoration: none;">Point Blank Online</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="alert('This does nothing for now'); return false;">News</a></li>
+                    <li><a href="#" onclick="alert('This does nothing for now too'); return false;">Shop</a></li>
+                    <li><a href="https://discord.gg/nbpYGpGs3S" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="info">
+                <p class="server-description">Welcome to the Point Blank Online server! Have you ever played with Point Blank mod but had no one to play with? Well Point Blank Online is a great solution for that! Join today.</p>
+                <p style="margin-top: 20px;">IP:</p>
+                <div class="code-box" onclick="copyToClipboard()">
+                    Coming Soon...
+                    <svg class="clipboard-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 12h6M9 16h6M5 8h14M19 4h-4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2H3v16h18V4z"/>
+                    </svg>
+                </div>
+                <div id="copy-notification" class="copy-notification">Copied to clipboard!</div>
+                <p style="margin-top: 20px;">Current Players Online:</p>
+                <div class="code-box" id="player-count-box">
+                    Loading...
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
