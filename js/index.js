@@ -1,5 +1,4 @@
-const server_url = "placeholder for server adress"
-
+const server_url = "placeholder for server address";
 
 function copyToClipboard() {
     navigator.clipboard.writeText(server_url).then(() => {
@@ -31,6 +30,42 @@ async function fetchPlayerCount() {
     }
 }
 
-console.log("Hi, Im Justablock... Also why are you looking here in console?")
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('items.json')
+        .then(response => response.json())
+        .then(data => displayItems(data))
+        .catch(error => console.error('Error loading items:', error));
+});
+
+function displayItems(items) {
+    const shopSection = document.querySelector('.shop');
+    
+    items.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('shop-item');
+        
+        const icon = document.createElement('img');
+        icon.src = item.icon;
+        icon.alt = item.name;
+        itemDiv.appendChild(icon);
+        
+        const name = document.createElement('h2');
+        name.textContent = item.name;
+        itemDiv.appendChild(name);
+        
+        const price = document.createElement('p');
+        price.textContent = `Price: $${item.price}`;
+        itemDiv.appendChild(price);
+        
+        const buyButton = document.createElement('button');
+        buyButton.textContent = 'Buy';
+        buyButton.onclick = () => alert(`Umm we dont have buy function for now so umm you purchased ${item.name} for... wait how much...? OH YEAH! It cost $${item.price}(damn inflation is tripping now)`);
+        itemDiv.appendChild(buyButton);
+        
+        shopSection.appendChild(itemDiv);
+    });
+}
+
+console.log("Hi, Im Justablock... Also why are you looking here in console?");
 
 fetchPlayerCount();

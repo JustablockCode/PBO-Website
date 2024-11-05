@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Diamond Sword",
+        "price": 100,
+        "icon": "../images/diamond_sword.png"
+    },
+    {
+        "name": "Diamond Armor",
+        "price": 150,
+        "icon": "../images/diamond_armor.png"
+    },
+    {
+        "name": "Golden Apple",
+        "price": 50,
+        "icon": "../images/golden_apple.png"
+    }
+]
