@@ -9,9 +9,10 @@ body, html {
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.5) 0%, 
-        rgba(0, 0, 0, 0.5) 40%, 
-        rgba(0, 31, 63, 0.8) 60%, 
-        #001f3f 100% 
+        rgba(0, 0, 0, 0.5) 10%,  
+        rgba(0, 31, 63, 0.8) 40%, 
+        #001f3f 70%, 
+        #001f3f 100%  
     ),
     url('../background.gif') no-repeat center center fixed;
     background-size: cover;
@@ -78,6 +79,41 @@ nav ul li a {
     margin-top: 50px;
     font-size: 2em;
     position: relative;
+}
+
+.media {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video-container {
+    margin-bottom: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2px 0; /* Further reduced margin for even closer images */
+}
+
+.image-wrapper.left {
+    justify-content: flex-start;
+}
+
+.image-wrapper.right {
+    justify-content: flex-end;
+}
+
+.image-wrapper img {
+    max-width: 45%;
+    border-radius: 10px;
 }
 
 .description-box, .ip-box {
