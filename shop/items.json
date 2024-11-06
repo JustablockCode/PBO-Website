@@ -1,17 +1,17 @@
 [
     {
-        "name": "Diamond Sword",
-        "price": 100,
+        "name": "Diamond Sword[TESTING ITEM]",
+        "price": 1,
         "icon": "../images/diamond_sword.png"
     },
     {
-        "name": "Diamond Armor",
-        "price": 150,
+        "name": "Diamond Armor[TESTING ITEM]",
+        "price": 1,
         "icon": "../images/diamond_armor.png"
     },
     {
-        "name": "Golden Apple",
-        "price": 50,
+        "name": "Golden Apple[TESTING ITEM]",
+        "price": 0.5,
         "icon": "../images/golden_apple.png"
     }
 ]
